@@ -1,0 +1,73 @@
+.app {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  width: 100%;
+  padding: 1rem;
+}
+.login {
+  height: 100%;
+  width: 40vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.login__form {
+  width: 70%;
+}
+.alert {
+  position: absolute;
+  top: 0%;
+  left: 4rem;
+}
+.sidebar {
+  flex: 0.35;
+  border-right: 1px solid rgb(209, 209, 209);
+}
+.chat {
+  flex: 0.65;
+}
+.sidebar__header {
+  border-bottom: 1px solid rgb(209, 209, 209);
+}
+.usertile {
+  border-bottom: 1px solid rgb(218, 218, 218);
+  transition: 0.2s ease;
+}
+.sidebar__body {
+  overflow-y: scroll;
+}
+.chat__body {
+  flex: 1;
+  overflow-y: scroll;
+  background-color: #fbf4e9;
+  padding: 1rem;
+}
+.chat__bodyMessage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  padding: 0.4rem 0.5rem;
+  max-width: 50%;
+}
+.chat__bodyMessage span {
+  font-size: 0.6rem;
+}
+.sent {
+  margin-left: auto;
+  background-color: #b1e693 !important;
+  color: black !important;
+}
+
+.usertile:hover {
+  cursor: pointer;
+  background-color: rgb(247, 247, 247);
+}
+.usertile p {
+  max-width: 300px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
